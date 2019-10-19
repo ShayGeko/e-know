@@ -1,0 +1,215 @@
+@font-face{
+    font-family: Yu Gothic UI Semibold;
+    src: url(../media/fonts/YuGothicUI-Semibold-03.ttf);
+}@font-face{
+    font-family: Yu Gothic UI Bold;
+    src: url(../media/fonts/YuGothicUI-Bold-02.ttf);
+}@font-face{
+    font-family: Yu Gothic UI Semilight;
+    src: url(../media/fonts/YuGothicUI-Semilight-02.ttf);
+}@font-face{
+    font-family: Yu Gothic UI Light;
+    src: url(../media/fonts/YuGothicUI-Light.ttf);
+}
+@font-face{
+    font-family: "adineue PRO KZ Black";
+    src: url("../media/fonts/Adineue-pro-kz-black.otf");
+}
+/*--------------------common--------------------------*/
+:root {
+    --orange: #F7B23B;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+a{
+    cursor:pointer;
+}
+.grid{
+    display: -ms-grid;
+    display: grid;
+}
+#loadScreen{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index:10;
+    background-color: white;
+}
+#loadScreen-img{
+    width: 700px;
+    height: 500px;
+    position: relative;
+    left: 50%;
+    margin-left: -350px;
+    top:50%;
+    margin-top: -250px;
+}
+html{
+    width: 100vw;
+    overflow-x:hidden;
+    height: max-content;
+    height : -moz-max-content;
+    height: -webkit-max-content;
+    height: -o-max-content;
+    height: -ms-max-content;
+}
+body{
+    width: 100%;
+
+    height: max-content;
+    height : -moz-max-content;
+    height: -webkit-max-content;
+    height: -o-max-content;
+    height: -ms-max-content;
+    overflow-x:hidden;
+    display: -ms-grid;
+    display: grid;
+    margin: 0;
+    position: absolute;
+    scroll-behavior: smooth;
+}
+.window{
+    width: 100vw!important;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    grid-template-areas:
+            "none none"
+            "content content";
+    -ms-grid-rows: 10vh auto;
+    grid-template-rows: 10% 90%;
+    min-height: 550px;
+    overflow-y: hidden;
+    justify-content: center;
+    justify-items: center;
+
+}
+.content{
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: content;
+    height: 95vh;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    min-height:500px;
+}
+h3{
+    margin-top: 0;
+    white-space: nowrap;
+    font-family: Yu Gothic UI Semilight, sans-serif;
+}
+h4{
+    margin: 0;
+}
+p{
+    font-family: Yu Gothic UI Light;
+}
+.bold{
+    font-family: Yu Gothic UI Bold;
+}
+.semi-bold{
+    font-family: "Yu Gothic UI Semibold";
+}
+.underlined{
+    text-decoration: underline;
+}
+.solid{
+    -webkit-text-decoration-style: solid;
+    text-decoration-style: solid;
+}
+div{
+    z-index: 2;
+}
+hr{
+    z-index: 4;
+    color: black;
+}
+.width-60{
+    width: 60%;
+}
+.orange-button{
+
+    background-color: var(--orange);
+    background:-webkit-gradient(linear, left bottom, left top, from(#EE8F3A) , to(#fbd02b));
+    background:-o-linear-gradient(bottom, #EE8F3A , #fbd02b);
+    background:linear-gradient(to top, #EE8F3A , #fbd02b);
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.orange-button a{
+    padding: 0;
+}
+.orange-button:not(li) a{
+    padding: 0.8vw 2vw;
+}
+.orange-button a{
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-family: Yu Gothic UI Semibold;
+    border:none;
+}
+.orange-button:hover{
+
+    background: #F7B23B!important;
+}
+.big-orange{
+    font-family: Yu Gothic UI Bold;
+    font-size: 100%;
+    color: var(--orange)
+}
+.adineue{
+    font-family: "adineue PRO KZ Black";
+}
+.black{
+    color: black;
+}
+.orange{
+    color: var(--orange);
+}
+.green-gradient{
+    background-color: green;
+    background: -webkit-gradient(linear, left top, right top, from(#05865F) , to(#96FB35));
+    background: -o-linear-gradient(left, #05865F , #96FB35);
+    background: linear-gradient(to right, #05865F , #96FB35);
+}
+.yellow-gradient{
+    background-color: orange;
+    background:-webkit-gradient(linear, left top, right top, from(#EE8F3A) , to(#FCFE2F) );
+    background:-o-linear-gradient(left, #EE8F3A , #FCFE2F );
+    background:linear-gradient(to right, #EE8F3A , #FCFE2F );
+}
+.white{
+    color: white;
+}
+/* ----------------------------------------------------*/
+/* -------------------header-----------------*/
+
+/* ----------------------------------------------------*/
+
+
+/* --------------- first page ------------------------*/
+
+
+/* ----------------------------------------------------*/
+
+/* ------------------- second page --------------------*/
+
+/* ----------------------------------------------------*/
+/* --------------------third-page----------------------*/
+
+/* ----------------------------------------------------*/
+/*--------------------fourth-page----------------------*/
+
+/* ----------------------------------------------------*/
+/*--------------------interactive----------------------*/
+
+
+/* ----------------------------------------------------*/

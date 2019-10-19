@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name = "keywords" content = "e-know, eknow, ЗНО, подготовка к зно, онлайн-школа, підготовка до зно, курси, курси для ЗНО, курси підготовки до зно, зно математика, зно українська, зно англійська, зно біологія, зно хімія, онлайн курси">
+    <meta name="google-site-verification" content="N2VK0NJgKST1ZG6Sg6YCw4buCavXb4l3BFJNHpm3yH0" />
+    <title>Онлайн школа підготовки до ЗНО E-KNOW</title>
+    <link rel = "stylesheet" href = "css/main.css">
+    <link rel = "stylesheet" href = "css/header.css">
+    <link rel = "stylesheet" href = "css/page-1.css">
+    <link rel = "stylesheet" href = "css/page-2.css">
+    <link rel = "stylesheet" href = "css/page-3.css">
+    <link rel = "stylesheet" href = "css/page-4.css">
+    <link rel = "stylesheet" href = "css/page-5.css">
+    <link rel = "stylesheet" href = "css/footer.css">
+    <link rel = "stylesheet" href = "css/media.css">
+    <link rel="icon" href="media/images/favicon.ico" />
+    <link rel="shortcut icon" href="media/images/favicon.ico" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '385110465492903');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=385110465492903&ev=PageView&noscript=1"
+    /></noscript>
+    <script>
+      fbq('track', 'Lead');
+    </script>
+    <!-- End Facebook Pixel Code -->
+</head>
+<body>
+    <div id="loadScreen">
+        <img id = "loadScreen-img" src = "media/images/loading-screen.jpg">
+    </div>
+    <header>
+        <div class="overflow-mask">
+            <img id  = "header-background" src = "media/images/first_background.png">
+        </div><div class = "wrap" id = "logo"></div>
+        <nav>
+            <ul>
+                <li><a href = "#first-page">
+                    Головна
+                </a></li>
+                <li>
+                    <a onclick="open_five(1)"> Про нас</a>
+                </li>
+                <li>
+                    <a href = '#third-page'>Заняття</a>
+                </li>
+                <li>
+                    <a href = '#footer'>Контакти</a>
+                </li>
+            </ul>
+        </nav>
+        <img src = "media/images/3line-btn.png" id = "line-btn">
+        <span id = "header-big-btn" class = "orange-button" id = "contact"><a onclick="open_form()">Зв'язатися</a></span>
+    </header>
+    <section class = "window" id = "first-page" name = "main">
+        <script src = "js/preLoad.js"></script>
+        <img class = "window-background" src = "media/images/first_background.png" id = "first-page-background">
+        <div class="content" id = "first-page-contain">
+            <img src="media/images/book-blue.png" id = "fp-blue-book">
+            <img src="media/images/book-yellow.png" id = "fp-yellow-book">
+           <img src="media/images/book-fp.png" id = "fpage-book">
+            <div id="fpage-h3-wrap">
+                <h3 id = "fpage-h3">Перша <br/>
+                    та наймасштабніша - <br/>
+                    <span class = "big-orange">ОНЛАЙН ШКОЛА</span> підготовки <br/>
+                    <span style = "float: right;">до <span class = "big-orange">ЗНО!</span></span></h3>
+            </div>
+            <div id = "first-page-info">
+                <div id="fpage-p-wrap">
+                    <p id = "fpage-p1">Для 11-класників будь-якого рівня знань</p>
+                    <p> Ефект "Вау, це було так просто!" після кожного заняття.</p>
+                </div>
+                <div class="wrap" id = "fpage-courseLinks">
+                    <span class="orange-button" id = "fpage-courseBtn" ><a href = "#third-page">Вибрати курс</a></span>
+                    <a id = "fpage-secondLink" href = "#fourth-page">або пробний урок</a>
+                </div>
+            </div>
+            <div id = "first-page-video-wrap"><iframe id = "first-page-video" src="https://www.youtube.com/embed/ULmd1gowHNc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <!-- <iframe  id = "first-page-video" src="https://www.youtube.com/embed/ULmd1gowHNc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+               <!-- <video controls="controls" id = "first-page-video">
+                    <source src = "https://youtu.be/ULmd1gowHNc" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                </video>-->
+            </div>
+
+            <div id="first-page-foot">
+                <div id="fpage-foot-wrap">
+                <img id="fpage-v-pic"src = "media/images/v_s.png">
+                <p id = "fpage-guarantee">Гарантуємо повне повернення коштів,<br/> в разі місяця навчання без результату!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src = "js/main.js"></script>
+
+
+    <div id="spage-wrap">
+    <section class = "window" id = "second-page" name = "about">
+        <img src = "media/images/second-page-back2.jpg" id = "second-page-background">
+         <div class="content" id = "second-page-content">
+             <img  src = "media/images/second-page-back1.jpg" id = "second-page-1234-background">
+
+             <!--<img class = "second-page-content" src = "media/images/second_page_books.png" id = "second-page-books-img">
+             <img class = "second-page-content" src = "media/images/second_page_up_line.png" id = "second-page-up-line-img">
+             <img class = "second-page-content" src = "media/images/second_page_plant.png" id = "second-page-plant-img">
+             <img class = "second-page-content" src = "media/images/second_page_boy.jpg" id = "second-page-boy-img">
+             <img class = "second-page-content" src = "media/images/second_page_one_two.png" id = "second-page-one-two-img">-->
+
+             <div id="second-page-text-field">
+                 <h4 class="second-page-top-header adineue white">Економія
+                     часу!</h4>
+                 <h4 class="second-page-top-header adineue white">Комфорт!</h4>
+                 <h4 class="second-page-top-header adineue white">Сучасний
+                     підхід!</h4>
+                 <h4 class="second-page-top-header adineue white">Інноваційна
+                     система!</h4>
+                 <p class="second-page-top-paragraph bold">Ви більше не витрачаєте час на дорогу туди і назад.</p>
+                 <p class="second-page-top-paragraph bold">Ви можете почати урок в будь-якому місці і з будь-якого пристрою.</p>
+                 <p class="second-page-top-paragraph semi-bold">Ви, за нашими стандартами, маєте електронне д/з  та виконуєте його зручно, і навіть на ходу.</p>
+                 <p class="second-page-top-paragraph semi-bold">Ви, за рахунок навчання через інтерес, отримуєте подвійний результат з мінімум зусиль.</p>
+
+
+                 <div class="second-page-article">
+                     <h4 class="second-page-header adineue orange">Електронний щоденник у вашому мессенджері!</h4>
+                     <p class="bold black">Після кожного уроку ми:</p>
+                     <p>- надаємо результат продуктивності учня</p>
+                     <p>- відеозапис всього уроку</p>
+                     <p class="bold black">А також, завжди цікавимося, чи не потребуєте ви додаткової допомоги вчителя після пройденого матеріалу.</p>
+                 </div>
+                 <div class="second-page-article">
+
+                     <h4 class="second-page-header adineue orange">Новий формат проведення онлайн уроків!</h4>
+
+                     <p>- ви, ваша група і вчитель на відстані, але як-ніби
+                         в одному приміщенні.</p>
+
+                     <p class="bold black">Ви завжди будете відчувати енергію викладача,
+                         вам напишуть на дошці та покажуть експеримент!</p>
+                 </div>
+                 <div class="second-page-article">
+
+                     <h4 class="second-page-header adineue orange">Мотивація на кращий прогрес!</h4>
+
+                     <p><span class="bold black">Кожні 3 місяці</span> ми підраховуємо загальний бал продуктивності в електронних щоденниках всіх учнів - <span class="bold black">і ТРОЄ отримують подарунки від <span class="adineue orange">AIR PODS</span> до <span class="adineue orange">APPLE WATCH.</span></span></p>
+                 </div>
+                 <div class="second-page-article">
+
+                     <h4 class="second-page-header adineue orange">Якість взаємин - це важливо!</h4>
+                     <p>Ми впевнені, високий результат - це приємне оточення і професіоналізм сучасного викладача, його турбота та особистий підхід до кожного.</p>
+                     <p><span class="bold black">У нашому випадку, вони готові допомогти в будь-який час, а також досягти всіх поставлених цілей!</span></p>
+                 </div>
+                 <h3 class="second-page-num-heading adineue black">Високий бал</h3>
+                 <span class="second-page-sub-num semi-bold black">Успішне складання ЗНО</span>
+                 <h3 class="second-page-num-heading adineue black">Свобода вибору</h3>
+                 <span class="second-page-sub-num semi-bold black">Вступ саме туди, куди мрієте</span>
+             </div>
+
+         </div>
+    </section>
+
+
+    <section class = "window" id = "second-page-mobile">
+        <div class="content" id="second-page-content-mobile-1">
+            <img src="media/images/second-page-background-mobile.jpg" id = "second-page-mobile-background">
+            <h4 class="second-page-top-header-mobile adineue orange">Економія
+                часу!</h4>
+            <h4 class="second-page-top-header-mobile adineue orange">Комфорт !</h4>
+            <h4 class="second-page-top-header-mobile adineue orange">Сучасний підхід !</h4>
+            <h4 class="second-page-top-header-mobile adineue orange">Інноваційна система !</h4>
+            <p class="second-page-top-paragraph-mobile bold">Ви більше не витрачаєте час на дорогу туди і назад.</p>
+            <p class="second-page-top-paragraph-mobile bold">Ви можете почати урок в будь-якому місці і з будь-якого пристрою.</p>
+            <p class="second-page-top-paragraph-mobile semi-bold">Ви, за нашими стандартами, маєте електронне д/з  та виконуєте його зручно, і навіть на ходу.</p>
+            <p class="second-page-top-paragraph-mobile semi-bold">Ви, за рахунок навчання через інтерес, отримуєте подвійний результат з мінімум зусиль.</p>
+
+            <h3 class="second-page-num-heading-mobile adineue black">Високий
+                бал</h3>
+            <span class="second-page-sub-num-mobile semi-bold black">Успішне складання ЗНО</span>
+            <h3 class="second-page-num-heading-mobile adineue black">Свобода
+                вибору</h3>
+            <span class="second-page-sub-num-mobile semi-bold black">Вступ саме туди, куди мрієте</span>
+        </div>
+
+        <div class="content" id="second-page-content-mobile-2">
+            <img src="media/images/second-page-mobile-background-2.jpg" id = "second-page-mobile-background-2">
+            <div class="second-page-article-mobile">
+                <h4 class="second-page-header-mobile adineue orange">Електронний щоденник у вашому мессенджері !</h4>
+                <p class="bold black">Після кожного уроку ми:</p>
+                <p>- надаємо результат продуктивності учня</p>
+                <p>- відеозапис всього уроку</p>
+                <p class="bold black">А також, завжди цікавимося, чи не потребуєте ви додаткової допомоги вчителя після пройденого матеріалу.</p>
+            </div>
+            <div class="second-page-article-mobile">
+
+                <h4 class="second-page-header-mobile adineue orange">Новий формат проведення онлайн уроків !</h4>
+
+                <p>- ви, ваша група і вчитель на відстані, але як-ніби
+                    в одному приміщенні.</p>
+
+                <p class="bold black">Ви завжди будете відчувати енергію викладача,
+                    вам напишуть на дошці та покажуть експеримент!</p>
+            </div>
+            <div class="second-page-article-mobile">
+
+                <h4 class="second-page-header-mobile adineue orange">Мотивація на кращий прогрес !</h4>
+
+                <p><span class="bold black">Кожні 3 місяці</span> ми підраховуємо загальний бал продуктивності в електронних щоденниках всіх учнів -<span class="bold black"> і ТРОЄ отримують подарунки від <span class="adineue orange">AIR PODS</span> до <span class="adineue orange">APPLE WATCH.</span></span></p>
+            </div>
+            <div class="second-page-article-mobile">
+
+                <h4 class="second-page-header-mobile adineue orange">Якість взаємин -
+                    це важливо !</h4>
+                <p>Ми впевнені, високий результат - це приємне оточення і професіоналізм сучасного викладача, його турбота та особистий підхід до кожного.</p>
+                <p><span class="bold black">У нашому випадку, вони готові допомогти в будь-який час, а також досягти всіх поставлених цілей!</span></p>
+            </div>
+        </div>
+    </section>
+    </div>
+
+
+    <section class = "window" id = "third-page" name = "courses">
+        <div class="content" id = third-page-content>
+            <img src = "media/images/third_page_sec_var_background.jpg" id = "third-page-background">
+            <img src = "media/images/third-page-mobile-background.jpg" id = "third-page-background-mobile">
+            <div class="third-page-button"><p>УКРАЇНСЬКА МОВА ТА ЛІТЕРАТУРА</p></div>
+            <div class="third-page-button"><p>МАТЕМАТИКА</p></div>
+            <div class="third-page-button"><p>ІСТОРІЯ УКРАЇНИ</p></div>
+            <div class="third-page-button"><p>АНГЛІЙСЬКА МОВА</p></div>
+            <div class="third-page-button"><p>БІОЛОГІЯ</p></div>
+            <div class="third-page-button"><p>ХІМІЯ</p></div>
+        </div>
+        <div id="course-card-scene">
+            <img src = "media/images/close-dark.png" id = "course-card-close-btn">
+
+
+            <div id="course-card">
+                <img src = "media/images/third-page-card-background.jpg" id = "third-page-card-background"><!--
+                <img src = "media/images/third-page-card-background-mobile.jpg" id = "third-page-card-background-mobile">
+                <img src = "media/images/third-page-background-mobile-2.jpg" id = "third-page-card-background-mobile-2">-->
+                <h5 id = "course-card-header-text" class="black adineue"></h5>
+                <div id="third-page-card-timetable">
+                    <p class = "semi-bold black">Курс триває 8 місяців:</p>
+                    <p>6 місяців вивчення нового матеріалу
+                        2 місяці - практика + тести у форматі ЗНО</p>
+                    <span class = "semi-bold black">Графік:</span>
+
+                    <p>-пн,ср,пт <span class = "semi-bold black">або</span> вт,чт,сб</p>
+                    <p ><span class="semi-bold">Тривалість заняття</span> - 1,5 год</p>
+                    <p ><span class="semi-bold">Група</span> - 7 учнів</p>
+                    <p class="adineue black">Електронне д/з та електронний щоденник!</p>
+
+                </div>
+                <span class="adineue black third-page-card-add-heading">Початок</span>
+                <span class="adineue black third-page-card-add-heading">102</span>
+                <span class="adineue black third-page-card-add-heading">24/7</span>
+                <span class="adineue black third-page-card-add-heading">250 грн</span>
+
+                <span class="semi-bold black third-page-card-sub-heading">з 16 вересня 2019</span>
+                <span class="semi-bold black third-page-card-sub-heading">заняття за курс</span>
+                <span class="semi-bold black third-page-card-sub-heading">доступ до всіх
+                    матеріалів</span>
+                <span class="semi-bold black third-page-card-sub-heading">вартість за
+                    одне заняття</span>
+
+                <span class="third-page-card-list">Нічого зайвого, лише те, що потрібно вам на ЗНО.</span>
+                <span class="third-page-card-list">Ви завжди отримуєте індивідуальні поради та допомогу від наших викладачей.</span>
+                <span class="third-page-card-list">Постійна перевірка поточного прогресу та своєчасний вплив на Вашу навчальну діяльність.</span>
+                <span class="third-page-card-list">Додаткові інтерактивні ігри з пройдених складних тем ЗНО - дають можливість запам'ятати матеріал легко на надовго.</span>
+
+                <span class="orange-button" id="third-page-course-card-btn"><a onclick = "open_form()">Вибрати цей курс або дізнатися більше</a></span>
+            </div>
+
+
+            <div id="course-card-mobile">
+
+                <img src="media/images/kustik-3-p.png" id="course-card-bottom-background">
+                <div id="course-card-mask-mobile">
+
+
+
+
+                    <div id="course-card-timetable-mobile">
+
+                        <h5 id = "course-card-header-text-mobile" class="black adineue"></h5>
+                        <img src="media/images/palka-png-orange.png" id="timetable-left-line">
+                        <div id="course-card-timetable-text-wrap-mobile">
+                            <p class = "semi-bold black">Курс триває 8 місяців</p>
+                            <p>6 місяців вивчення нового матеріалу
+                                2 місяці - практика + тести у форматі ЗНО</p>
+                            <span class = "semi-bold black">Графік:</span>
+
+                            <p>-пн,ср,пт <span class = "semi-bold black">або</span> вт,чт,сб</p>
+                            <p ><span class="semi-bold">Тривалість заняття</span> - 1,5 год</p>
+                            <p ><span class="semi-bold">Група</span> - 7 учнів</p>
+                            <p class="adineue black">Електронне д/з та електронний щоденник!</p>
+                        </div>
+
+                    </div>
+
+                    <div id="course-card-add-mobile">
+                        <img src="media/images/points-3-p.png" id="course-card-add-background-mobile" onload = "tt()">
+                        <span class="adineue black third-page-card-add-heading-mobile">Початок</span>
+                        <span class="adineue black third-page-card-add-heading-mobile">102</span>
+                        <span class="adineue black third-page-card-add-heading-mobile">24/7</span>
+                        <span class="adineue black third-page-card-add-heading-mobile">250 грн</span>
+
+                        <span class="semi-bold black third-page-card-sub-heading-mobile">з 16 вересня 2019</span>
+                        <span class="semi-bold black third-page-card-sub-heading-mobile">заняття за курс</span>
+                        <span class="semi-bold black third-page-card-sub-heading-mobile">доступ до всіх
+                    матеріалів</span>
+                        <span class="semi-bold black third-page-card-sub-heading-mobile">вартість за
+                    одне заняття</span>
+                    </div>
+
+                    <div id="course-card-footer-mobile">
+                        <span class="orange-button" id="course-card-btn-mobile"><a onclick = "open_form()">Вибрати цей курс або дізнатися більше</a></span>
+                    </div>
+                    <div id="course-card-list-mobile">
+                        <div class="card-list-mobile-wrap">
+                            <img src="media/images/punkt.png" class="card-list-pre-img">
+                             <p>Нічого зайвого, лише те, що потрібно вам на ЗНО.</p>
+                        </div>
+                        <div class="card-list-mobile-wrap">
+                            <img src="media/images/punkt.png" class="card-list-pre-img">
+                             <p>Ви завжди отримуєте індивідуальні поради та допомогу від наших викладачей.</p>
+                        </div>
+                        <div class="card-list-mobile-wrap">
+                            <img src="media/images/punkt.png" class="card-list-pre-img">
+                              <p>Постійна перевірка поточного прогресу та своєчасний вплив на Вашу навчальну діяльність.</p>
+                        </div>
+                        <div class="card-list-mobile-wrap">
+                            <img src="media/images/punkt.png" class="card-list-pre-img">
+                             <p>Додаткові інтерактивні ігри з пройдених складних тем ЗНО - дають можливість запам'ятати матеріал легко на надовго.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+            </div>
+    </section>
+
+
+    <section class = "window" id = 'fourth-page' name = "contact">
+
+        <div class="content" id = "fourth-page-content">
+            <img src = "media/images/fourth-page-background.jpg" id = "fourth-page-background">
+            <img src = "media/images/fourth-page-mobile-background_1.jpg" id = "fourth-page-mobile-background">
+            <div id="fourth-page-left-side">
+
+                <p class="fourth-page-big">Залиште заявку!
+                    Ось <a onclick = "open_form()" class = "underlined solid">тут</a></p>
+                <p class="fourth-page-big">Ми допоможемо вам
+ з усіма питаннями</p>
+                <p class="fourth-page-big">Все просто!
+ Починаємо готуватися разом</p>
+
+                <h3 id = "fourth-page-how-to-heading">Як
+                    Почати
+                    Займатися?
+                </h3>
+            </div>
+            <div id="fourth-page-card">
+                <img src="media/images/fourth-page-card-background.jpg" id = "fourth-page-card-background">
+                <div id="fourth-page-card-сontent-wrap">
+                    <div id="fourth-page-card-text-wrap">
+                        <h2 id = "fourth-page-card-heading">Отримайте та оцініть проведення онлайн уроків прямо зараз!</h2>
+                        <p id = "fourth-page-card-add">Для вашої повної впевненості, ми відправимо Вам відеозаписи пробних уроків!</p>
+                    </div>
+                    <div id="fourth-page-card-btn-wrap">
+                        <span class="orange-button" id = "fourth-page-register" ><a>Залишити заявку</a></span>
+                    </div>
+                </div>
+            </div>
+            <div id="fourth-page-form">
+                <img src = "media/images/close-dark.png" id = "frame-close-btn">
+             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfOx6jgvRV37LbtRfUKY9i5aHUSvNWz_CS2cn3cTwHaTb3Y4Q/viewform" scrolling="no" frameborder="0"></iframe>
+            </div>
+            <div id="fourth-page-form-email">
+                <img src = "media/images/close-dark.png" id = "frame-close-btn-email">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-3NSHSOcbQjZo_W0kuL-qYjnKuweXqRN78XPPDsNF5bTldA/viewform" scrolling="no" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id = "footer">
+        <img src="media/images/footer-background.jpg" alt="" id="footer-background">
+        <div class="footer-links-wrap">
+            <h4 class = "semi-bold black">ЗАНЯТТЯ</h4>
+            <a  class = "lesson_a" onclick="open_course(this)">УКРАЇНСЬКА МОВА ТА ЛІТЕРАТУРА</a>
+            <a  class = "lesson_a" onclick="open_course(this)">МАТЕМАТИКА</a>
+            <a class = "lesson_a" onclick="open_course(this)">ІСТОРІЯ УКРАЇНИ</a>
+            <a  class = "lesson_a" onclick="open_course(this)">АНГЛІЙСЬКА МОВА</a>
+            <a class = "lesson_a" onclick="open_course(this)">БІОЛОГІЯ</a>
+            <a class = "lesson_a" onclick="open_course(this)">ХІМІЯ</a>
+        </div>
+
+        <div class="footer-links-wrap">
+            <h4 class = "semi-bold black">КОМПАНІЯ</h4>
+            <a onclick="open_five(1)">ПРО НАС</a>
+            <a href="#second-page">НАШІ ПЕРЕВАГИ</a>
+            <a onclick="open_five(2)">ОСНОВНІ СКЛАДОВІ НАВЧАННЯ</a>
+        </div>
+
+        <div class="footer-links-wrap">
+            <h4 class = "semi-bold black">ЗНАЙДІТЬ НАС ТУТ</h4>
+            <div class="footer-position-center">
+                <a href="https://instagram.com/zno.eknow.schl?igshid=ejsd8v67ujfc"  class="network-link" target = "_blank"><img src="media/images/instagram-link.png" alt="instagram" ></a>
+                <a href="https://m.facebook.com/zno.eknow.schl/?ref=bookmarks" class="network-link"  target = "_blank"><img src="media/images/facebook-link.png" alt="facebook" ></a>
+                <a href="https://www.youtube.com/channel/UCHpwyFDL1np3xhULWeXSeZw" class="network-link"  target = "_blank"><img src="media/images/youtube-link.png" alt="youtube" ></a>
+            </div>
+
+        </div>
+
+        <div class="footer-links-wrap">
+            <h4 class = "adineue black">ВАС ЗАЦІКАВИЛА НАША ОНЛАЙН ШКОЛА?</h4>
+            <p class="adineue black">Тоді ми будемо раді співпрацювати з вами!</p>
+            <p class="adineue black">(050) 109 44 34<br/>(097) 492 59 31</p>
+            <p class="adineue black">eknow.online@gmail.com</p>
+            <div class="footer-position-center">
+                 <a href="https://t.me/eknow_online"  class="contact-link"><img src="media/images/telegram.png" alt="telegram"></a>
+                 <a href="https://invite.viber.com/?g2=AQABj%2FXtSd7awkoP3nrZ6QZBV89L3mdghbKHztKo%2Bu9pNZ2QTDNFkeeKDw%2BynnaI"  class="contact-link"><img src="media/images/call.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-links-wrap">
+            <p>&#9400;2019E-KNOWALLRIGHTSRESERVED</p>
+        </div>
+    </footer>
+
+    <section class="window" id="fifth-page">
+        <img src = "media/images/close-dark.png" id = "page-five-close-btn">
+        <div class="content" id = "fifth-page-content">
+            <img src = "media/images/fifth-page-background.jpg" id = "fifth-page-background">
+            <div id="mask"></div>
+            <img src="media/images/5th-page-img.jpg" id = "fifth-page-img">
+            <div class = "toggle-1" id="t1">
+                <div class = "grid toggle-1"><h3 class="page-5-h3 orange">Добрий день!</h3></div>
+                <p class = "toggle-1">Наша <span class = "adineue black">інноваційна, модернізована Онлайн Школа «E-Know»</span> розроблена для максимального спрощення підліткам підготовки до головного та ключового іспиту при вступі до майбутнього університету - «ЗНО».
+                </p>
+                <p class = "toggle-1">Щороку ми стикаємося з проблемою неефективних курсів, слабо кваліфікованих репетиторів, або з колосальними цінами за одне заняття.</p>
+                <p class = "toggle-1">А найголовніше, самі учні, відправляючись кожен день «заучувати» новий матеріал, за рік повністю втрачають моральну і фізичну силу, що негативно впливає на результат написання іспиту.</p>
+                <p class = "toggle-1"><span class="adineue black">Засновники Онлайн Школи твердо переконані - час підняти навчання на новий рівень.</span></p>
+
+                <div class = "grid toggle-1"><h3 class="page-5-h3 orange">Яка наша стратегія навчання і чому саме ми?</h3> </div>
+
+                <p class = "toggle-1">Ми живемо в сучасному світі, а це означає, <span class = "adineue orange">наші головні потреби - комфорт і економія часу, найвищий результат - мінімум зусиль та витрат.</span></p>
+                <p class = "toggle-1"><span class = "adineue orange">У нашій Онлайн Школі «E-Know»</span> - Ви повністю керуєте своєю зручністю!</p>
+                <p class = "toggle-1"><span class = "adineue orange">У нашій Онлайн Школі</span> - Ви вибираєте, де і з якого пристрою вам почати онлайн урок!</p>
+                <p class = "toggle-1"><span class = "adineue black">Ваша вигода</span> - економія часу на дорогу, можливість займатися в абсолютно будь-якому місці.</p>
+                <p class = "toggle-1">Ви можете зібратися з друзями в парку або не пропустити заняття, їдучи в поїздку!</p>
+
+                <p class = "toggle-1"><span class = "adineue orange">У нашій Онлайн Школі</span>  - Ви навчаєтеся за новою системою, отримуючи знання через викликаний інтерес до навчання.</p>
+                <p class = "toggle-1"><span class = "adineue black">Ваша вигода</span> - підготовка до іспиту перетворюється в легке отримання і засвоєння найважливішого матеріалу під час заняття. </p>
+                <p class = "toggle-1">Ваш вільний час залишається для Вас і для вашого хобі!</p>
+                <div class="width-60 toggle-1">
+                    <p class = ""><span class = "adineue orange">У нашій Онлайн Школі «E-Know»</span><span class="adineue black">діє</span> власне розроблений<span class="adineue black"> електронний щоденник у вашому мессенджері (Telegram, Viber та ін.)</span> - для швидкого перегляду результату продуктивності учня після кожного заняття.</p>
+                    <p class = ""><span class="adineue black">Також, </span>на ваш електронний щоденник<span class="adineue black"> щоразу буде відправлен   відеозапис заняття після його завершення.</span></p>
+                    <p class = ""><span class="adineue orange">І найважливіше,</span> за допомогою електронного щоденника, Ви завжди зможете звернутися до викладача, якщо виникли питання, пов'язані з пройденим матеріалом.</p>
+
+                    <div class = "grid row"><h3 class="page-5-h3 orange">Детально про систему навчання</h3>
+                        <a id = "goto-edu-system" onclick="toggle2()" href="#fifth-page-content"><img src="media/images/green-arrow-right.png" id = "green-arrow"></a></div>
+
+                </div>
+            </div>
+            <div class = "toggle-2" id = "t2">
+                <div class = "grid toggle-2" id = "edu-system"><h3 class="page-5-h3 orange">Детально про систему навчання</h3> </div>
+                <p class = "toggle-2"><span class="adineue black">Новаторська система</span> навчання нашої<span class="adineue orange">Онлайн Школи «E-Know»</span> побудована на високоефективній програмі, яка включає вільне сприйняття інформації під час заняття і повне її розуміння, що гарантує відкладення пройденого матеріалу в довгу пам'ять і не потребує інтенсивної додаткової роботи. У свою чергу, це дає більше сил і моральний відпочинок підліткам, що позитивно вплине на результат іспиту.</p>
+                <p class = "toggle-2"><span class="adineue black">Це і є нашою головною метою - якомога вище отриманий бал на «ЗНО».</span></p>
+                <p class = "toggle-2"><span class="adineue black">Обов'язковою частиною нашої системи є </span>поділ груп за рівнем знань. Учень не повинен відчувати себе незручно або навпаки, що він не виносить видимої користі і не отримує нових знань. </p>
+                <p class = "toggle-2"><span class="adineue black">Кожен урок - це наша наполеглива робота на ваш легко отриманий результат.</span></p>
+                <p class = "toggle-2"><span class="adineue black">Також,</span> однією з основних методик нашої <span class="adineue orange">Онлайн Школи</span> є «сприятливо змагальний дух», <span class="adineue black">а тепер детальніше, це важливо!</span></p>
+                  <p class = "toggle-2"><span class="adineue black">По завершенню кожного семестру,</span> підраховується загальний бал продуктивності в електронному щоденнику кожного учня. В кінцевому підсумку,<span class="adineue orange">ТРОЄ</span> з найвищим результатом отримують свої подарунки - <span class="adineue black"> від AIR PODS до APPLE WATCH.</span></p>
+                <p class = "toggle-2"><span class="adineue black">Обов'язковим фактором</span> під час навчання є навколишня атмосфера. Ми створюємо максимально теплі, дружні стосунки в усій<span class="adineue orange">Онлайн Школі, </span>вибудовуємо прямий і відкритий контакт між групою і їх викладачем. Наші учні в будь-який час можуть звернутися за допомогою або поставити додаткові питання.</p>
+
+                <div class="grid toggle-2"><h3 class="page-5-h3 orange">Структура онлайн уроків</h3></div>
+                <p class = "toggle-2">В <span class="adineue orange">Онлайн Школі «E-Know»</span> навчання побудовано протягом 8 місяців, з вересня по середину травня.</p>
+                <p class = "toggle-2"><span class="adineue black">Ми вважаємо за необхідне,</span> врахувати можливість проведення будь-якого з іспитів наприкінці травня, а також даємо підліткам час на спокійну самопідготовку і невеликий відпочинок, що сприятливо вплине на їх результат.</p>
+                <div class="width-60 toggle-2">
+                     <p>Цілий курс ділиться на 2 семестри по 3 місяці - це час спрямований тільки на вивчення нового матеріалу, і доповнюється 2-ма місяцями щільної практики та повторень, для відчуття повної готовності до самого іспиту.</p>
+                    <div class="grid"><h3 class="page-5-h3 orange">Пробні уроки</h3></div>
+                    <p>У нашій <span class="adineue orange">Онлайн Школі</span>, Ви можете оцінити проведення онлайн уроків саме зараз!</p>
+                    <p><span class="adineue black">Для вашої повної впевненості,</span> ми відправляємо Вам відеозаписи пробних уроків на електронну пошту!</p>
+                    <a id = "leave-edu-system" onclick="toggle1()" href="#fifth-page-content"><img src="media/images/green-arrow-left.png" id = "green-arrow-back"><span class="adineue orange">Повернутися</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

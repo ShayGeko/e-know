@@ -1,0 +1,171 @@
+.window-background{
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+}
+#fp-blue-book{
+    width: 200px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+#fp-yellow-book{
+    width: 200px;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+#first-page{
+}
+#first-page-contain{
+
+    grid-template-areas:
+            "none1  none1"
+            "header video"
+            "text   video"
+            "foot   foot";
+    -ms-grid-columns: 45% 55%;
+    grid-template-columns: 45% 55%;
+    -ms-grid-rows: 11% 20% 45% 10%;
+    grid-template-rows: 11% 20% 45% 10%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#first-page-info{
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: text;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+    justify-items: start;
+}
+#fpage-h3-wrap{
+    -ms-grid-row:2;
+    -ms-grid-column:2;
+    margin-top: 20%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    grid-area:header;
+}
+#fpage-h3{
+    height: 30%;
+    padding-bottom: 10%;
+    width: 100%;
+}
+#fpage-p-wrap{
+    width: 100%;
+}
+#fpage-p1{
+    padding-top: 10%;
+}
+#fpage-courseLinks{
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-family: Yu Gothic UI Bold;
+    display: inline-table;
+    white-space: nowrap;
+    -ms-flex-item-align:center;
+    -ms-grid-row-align:center;
+    align-self:center;
+    -ms-grid-column-align: start;
+    justify-self: start;
+}
+#fpage-courseBtn, #fpage-secondLink{
+    display: inline-block;
+}
+#fpage-courseBtn{
+    padding: 0.8vw 0;
+    cursor: pointer;
+}
+#fpage-secondLink{
+    margin-left: 5%;
+    color: var(--orange);
+    white-space: nowrap;
+}
+#first-page-video-wrap{
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: video;
+    width: 100%;
+    justify-self: flex-end;
+}
+#first-page-video{
+    width:100%;
+
+    border: 2vw;
+    -o-border-image: url(../media/images/ramka.png) 2.4% 1.3% 2.05% 1.4% stretch;
+    border-image: url(../media/images/ramka.png) 2.4% 1.3% 2.05% 1.4% stretch;
+    border-style: solid;
+    margin-top:-2px;
+    margin-left:-2px;
+
+}
+#fpage-book{
+    position: absolute;
+    bottom:0;
+    left:280px;
+    height:40%;
+}
+#first-page-foot{
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: foot;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    justify-items: start;
+    width: 100%;
+}
+#fpage-foot-wrap{
+
+    width: -webkit-max-content;
+
+    width: -moz-max-content;
+
+    width: max-content;
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-rows:10vh;
+    grid-template-rows:10vh;
+    -ms-grid-columns: 1fr auto;
+    grid-template-columns: 1fr auto;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    justify-items: center;
+}
+#fpage-foot-wrap > *:nth-child(1){
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+#fpage-foot-wrap > *:nth-child(2){
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+#fpage-v-pic{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 40px;
+    height:40px;
+}
+#fpage-guarantee{
+    display: table-cell;
+    vertical-align: middle;
+    color: gray;
+    padding-left: 0.5vw;
+    font-size: 1.2rem;
+}

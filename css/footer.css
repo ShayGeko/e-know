@@ -1,0 +1,109 @@
+footer{
+    position:relative;
+    height: 400px;
+    width:100vw;
+    display: -ms-grid;
+    display:grid;
+    -ms-grid-rows:55% 35% 10%;
+    grid-template-rows: 55% 35% 10%;
+    -ms-grid-columns: 5% 27% 27% 41%;
+    grid-template-columns: 5% 27% 27% 41%;
+    z-index:0;
+    overflow: hidden;
+}
+#footer-background{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+.footer-links-wrap{
+    margin-top: 65px;
+}
+.footer-links-wrap *{
+    z-index:3;
+    position: relative;
+}
+.footer-links-wrap:nth-of-type(1){
+    -ms-grid-column:2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span:3;
+    grid-row: 1/ span 3;
+}
+.footer-links-wrap:nth-of-type(2){
+    -ms-grid-column:3;
+    grid-column: 3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+}
+.footer-links-wrap:nth-of-type(3){
+    -ms-grid-column:3;
+    grid-column: 3;
+    -ms-grid-row: 2;
+    grid-row: 2
+}
+.footer-links-wrap:nth-of-type(4){
+    -ms-grid-column:4;
+    grid-column: 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/ span 2;
+    text-align: center;
+}
+.footer-links-wrap:nth-of-type(5){
+    -ms-grid-column:4;
+    grid-column: 4;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    text-align: center;
+    margin:0;
+}
+.footer-links-wrap h4{
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+.footer-links-wrap a{
+    float:left;
+    clear:left;
+    color: black;
+    font-family: "Yu Gothic UI Semilight";
+    text-decoration: none;
+    white-space: pre-line;
+    width:100%;
+    line-height: 2;
+}
+.footer-links-wrap .black{
+    text-decoration: none;
+    color: black!important;
+}
+.network-link{
+    float:left;
+    clear:none!important;
+    width:50px!important;
+}
+.network-link:nth-of-type(2),.network-link:nth-of-type(3){
+    margin-left: 15px;
+}
+.network-link img{
+    height:50px;
+    width:50px;
+    cursor:pointer;
+}
+.contact-link{
+    float:left;
+    clear:none!important;
+    width:50px!important;
+}
+.contact-link img{
+    height:40px;
+    width:40px;
+    cursor:pointer;
+}
+.contact-link:nth-of-type(2){
+    margin-left:25px;
+}
+.footer-position-center a{
+    float: none;
+}
+

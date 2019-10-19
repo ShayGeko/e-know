@@ -1,0 +1,218 @@
+#fifth-page{
+    height:100vh;
+    display:none;
+    position:fixed;
+    top:0;
+    z-index: 20;
+    background:white;
+    overflow: scroll;
+}
+#fifth-page-background{
+    width:100vw;
+    position:absolute !important;
+    bottom:0;
+    z-index:-1;
+}
+#fifth-page .content{
+    height: max-content;
+    height : -moz-max-content  !important;
+    height: -webkit-max-content  !important;
+    height: -o-max-content  !important;
+    height: -ms-max-content  !important;
+    height: max-content !important;
+    display: block;
+    position:relative;
+    margin-left:5%;
+    width:90%;
+}
+#fifth-page .content *{
+    white-space: pre-line;
+    padding-left: 5px;
+    z-index: 3;
+    position: relative;
+}
+.page-5-h3 {
+    font-size: 2rem;
+    margin-left: 50px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+
+    align-self: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom:0;
+}
+.page-5-h3::before{
+    background-image: url(../media/images/fifth-page-about-us-palka.png);
+    background-size: 15px 100%;
+    width: 15px;
+    display: inline-block;
+    border-radius: 100px;
+    margin-top:-0.5rem;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    position: absolute;
+    left:-20px;
+    top:-10px;
+    bottom:-10px;
+    content: "";
+}
+
+#fifth-page .grid{
+    margin-top:40px;
+}
+#fifth-page .grid:nth-of-type(1){
+    margin-top:60px;
+}
+#fifth-page-img{
+    -ms-grid-column-align: end;
+    justify-self: end;
+    width: 30vw;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10vh;
+    border: 15px;
+    border-style: solid;
+    -o-border-image: url(../media/images/ramka.png) 3% 1.7% 2.5% 1.8% stretch;
+    border-image: url(../media/images/ramka.png) 3% 1.7% 2.5% 1.8% stretch;
+    padding-left:0 !important;
+}
+#page-five-close-btn{
+    width:50px;
+    position:fixed;
+    top:10px;
+    right:10px;
+    z-index:10;
+    cursor:pointer;
+}
+#goto-edu-system{
+    width:100%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height:100%;
+    height:-webkit-max-content;
+    height:-moz-max-content;
+    height:max-content;
+    -ms-grid-column-align: start;
+    justify-self: start;
+    -ms-flex-item-align:center;
+    -ms-grid-row-align:center;
+    align-self:center;
+    grid-row:1;
+    -ms-grid-row:1;
+    grid-column:2;
+    -ms-grid-column:2;
+}
+.toggle-2{
+    display:none;
+}
+.row{
+    grid-template-rows:1fr;
+    -ms-grid-rows:1fr;
+    -ms-grid-columns:70% 30%;
+    grid-template-columns:70% 30%;
+    grid-auto-rows: 0;
+}
+.row > *:nth-child(1){
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+.row > *:nth-child(2){
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+#green-arrow {
+    width: 100px;
+    height: 80px;
+}
+#green-arrow-back {
+    width: 100px;
+    height: 80px;
+}
+#mask{
+    width:100%;
+    position:absolute!important;
+    background-image: url('../media/images/infinity-book-bg.png');
+    background-size:contain;
+    background-position: 100% 100%;
+    background-clip: border-box;
+    background-repeat:repeat-y;
+    top:0;
+    left:0;
+    height:100%;
+}
+#leave-edu-system{/*
+    margin-left:-15%;*/
+    text-decoration: none;
+    height:-webkit-max-content;
+    height:-moz-max-content;
+    height:max-content;
+    width:-webkit-max-content;
+    width:-moz-max-content;
+    width:max-content;
+    display:-ms-grid;
+    display:grid;
+    grid-template-rows:100%;
+    -ms-grid-rows:100%;
+    grid-template-columns: 50% 50%;
+    -ms-grid-columns: 50% 50%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    justify-items:center;
+}
+#leave-edu-system span{
+    font-size: 2rem;
+}
+@media(max-width:500px){
+    .width-60{
+        width:80%;
+    }
+}
+@media(max-width:600px){
+    #fifth-page-img{
+        float:none;
+        clear:both;
+        width:70%;
+        margin-right:15%;
+        margin-top:15px;
+        margin-left:15%;
+    }
+    #fifth-page .grid:nth-of-type(1) {
+         margin-top: 20px;
+        width:100%;
+     }
+    #goto-edu-system{
+        width: 70px;
+        float:left;
+    }
+    .width-60{
+        width: 80%;
+    }
+    #leave-edu-system{
+        margin-left: -8%;
+    }
+    #leave-edu-system span{
+        font-size:1.8rem;
+        white-space: pre-line;
+    }
+}
+@media(max-width:400px){
+
+    #green-arrow-back{
+        width:20vw;
+        height: 15vw;
+    }
+    #green-arrow{
+        width:20vw;
+        height:15vw;
+    }
+    #leave-edu-system span{
+        font-size:1.3rem;
+    }
+}

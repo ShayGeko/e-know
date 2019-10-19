@@ -1,0 +1,193 @@
+
+#fourth-page-content {
+    /*width: 100vw !important;*/
+    grid-template-columns: 52% 48%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+            /*"none none"*/
+            "text card"
+}
+
+#fourth-page-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#fourth-page-mobile-background{
+    display:none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#fourth-page-card-background{
+    width: 100%;
+    height: 100%;
+    border-radius:50px;
+
+    position: absolute;
+
+    z-index: -1;
+}
+#fourth-page-left-side {
+    grid-area: text;
+    display: grid;
+    position: relative;
+    -ms-grid-rows: (15%)[3] 4% 20% auto;
+    grid-template-rows: repeat(3, 15%) 4% 20% auto;
+    -ms-grid-columns: 17% 14% 16% 2% 16% 30% auto;
+    grid-template-columns: 17% 14% 16% 2% 16% 30% auto;
+}
+.fourth-page-big:nth-child(1){
+    align-self:center;
+    margin-bottom:0;
+    grid-column-start:2;
+    grid-column-end: 6;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+.fourth-page-big:nth-child(2){
+    align-self:center;
+    grid-column-start:3;
+    grid-column-end: 7;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+.fourth-page-big:nth-child(3){
+    align-self:center;
+    grid-column-start:5;
+    grid-column-end: 8;
+    grid-row-start:3;
+    grid-row-end:4;
+}
+.fourth-page-big{
+
+    white-space: pre-line;
+    font-family: "adineue PRO KZ Black";
+    color: var(--orange);
+    font-size: 1.7vw;
+}
+#fourth-page-how-to-heading{
+    position: relative;
+    right: 10px;
+    font-family: "adineue PRO KZ Black";
+    color: var(--orange);
+    white-space: pre-line;
+    text-align: right;
+    grid-column-start: 6;
+    grid-row-end: 6;
+    font-size: 2.3vw;
+
+}
+#fourth-page-card {
+    grid-area: card;
+    width: 620px;
+    max-width: 40vw;
+    max-height: 90%;
+    border-radius: 50px;
+    box-shadow: 20px 15px 15px 5px rgba(0,0,0,0.2);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    grid-template-areas:
+            "none"
+            "content";
+}
+#fourth-page-card-сontent-wrap{
+    grid-area: content;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    -ms-grid-rows: 60% 40%;
+    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+    justify-items: center;
+    align-items: end;
+}
+#fourth-page-card-text-wrap{
+    text-align: center;
+    justify-self: center;
+    max-width:95%;
+}
+#fourth-page-card-heading{
+    font-family: "adineue PRO KZ Black";
+    font-size: 1.8rem;
+}
+#fourth-page-card-add{
+    color: black;
+    font-family: 'Yu Gothic UI Semilight';
+    font-size: 1.4rem;
+}
+#fourth-page-card-btn-wrap{
+
+    width: max-content;
+    width : -moz-max-content;
+    width: -webkit-max-content;
+    width: -o-max-content;
+    width: -ms-max-content;
+    align-self:center;
+}
+#fourth-page-register{
+    padding: 0.8vw 0;
+}
+#fourth-page-register a{
+    padding: 0.8vw 4vw;
+}
+#fourth-page-form{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 6;
+    overflow: auto;
+    display: none;
+}
+#fourth-page-form-email{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 6;
+    overflow: auto;
+    display: none;
+}
+#frame-close-btn{
+    width: 50px;
+    position: fixed;
+    top: 10px;
+    right:10px;
+    z-index: 11;
+    cursor:pointer;
+}
+#frame-close-btn-email{
+    width: 50px;
+    position: fixed;
+    top: 10px;
+    right:10px;
+    z-index: 11;
+    cursor:pointer;
+}
+#fourth-page-form iframe{
+    z-index: 10;
+    /* top: -10%; */
+    position: relative;
+    width: 100%;
+    height: 150vh;
+}
+#fourth-page-form-email iframe{
+    z-index: 10;
+    /* top: -10%; */
+    position: relative;
+    width: 100%;
+    height: 150vh;
+}
+@media(max-width:400px){
+    #fourth-page-card-text-wrap *{/*
+        margin:0;*/
+    }
+    #fourth-page-card-add{
+        font-size: 4vw!important;
+    }
+}
